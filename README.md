@@ -21,4 +21,4 @@ Pages then serves at `https://OWNER.github.io/loot-table-site/`. Use these in th
 | Privacy Policy | `https://OWNER.github.io/loot-table-site/privacy.html` |
 | TikTok Login Kit redirect URI | `https://OWNER.github.io/loot-table-site/callback.html` |
 
-Before publishing, replace `hello@example.com` in `privacy.html` and `terms.html` with the show's email, and fill the three account links in `index.html` once the handles exist.
+Before publishing, replace `loottablepodcast@gmail.com` in `privacy.html` and `terms.html` with the show's email, and fill the three account links in `index.html` once the handles exist.
