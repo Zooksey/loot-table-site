@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Authorization received · The Loot Table</title>
+<link rel="icon" href="avatar.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header><img src="avatar.png" alt=""><a href="index.html">The Loot Table</a></header>
+  <h1>Authorization received</h1>
+  <p>This page only exists to catch the sign-in redirect for the show's private publishing tool. Nothing here is stored or sent anywhere.</p>
+  <div class="box">
+    <p class="muted" style="margin-top:0">Copy this address back into the terminal that is waiting for it:</p>
+    <code id="url"></code>
+    <p style="margin-bottom:0"><button id="copy" type="button">Copy address</button> <span id="done" class="muted"></span></p>
+  </div>
+  <p class="muted">If you arrived here by accident, you can close this tab.</p>
+</main>
+<script>
+  var u = document.getElementById('url'); u.textContent = location.href;
+  document.getElementById('copy').addEventListener('click', function () {
+    navigator.clipboard.writeText(location.href).then(function () { document.getElementById('done').textContent = 'Copied.'; }, function () { document.getElementById('done').textContent = 'Select the address above and copy it.'; });
+  });
+</script>
+</body>
+</html>
